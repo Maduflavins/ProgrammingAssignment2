@@ -6,6 +6,7 @@
 ## this function caches the inverse of a matrix 
 ## first assigns the inverse to NULL to make space for futher computation then set the matrix(x) to y
 ## before going to getting and seting the matrix and inverse
+## then saves every thing in a special matrix
 makeCacheMatrix <- function(x = matrix()) {
         in_verse <- NULL
         set <- function(y){
@@ -24,6 +25,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+## The function computes the inverse of the special matrix
+## It checks if the matrix have been be computed before if so it just return the computed inverse otherwise it computes the inverse.
+
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
